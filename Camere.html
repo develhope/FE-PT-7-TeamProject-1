@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Resort</title>
+    <link rel="stylesheet" href="./Camere.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="luxury-section">
+        <h2>Luxurious Accommodations</h2>
+        <div class="cards-container">
+            <div class="card">
+                <img src="Immagini_Stanze/deluxe-suite.jpeg" alt="Deluxe Suite">
+                <div class="card-content">
+                    <h3>Deluxe Suite</h3>
+                    <p>Elegant 600 sq ft suite with city views</p>
+                    <div class="price-and-book-now">
+                        <p class="price">From $299/night</p>
+                        <a class="button-link" href="lotus-reserve-your-stay.html">Book Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="Immagini_Stanze/executive-suite.jpeg" alt="Executive Suite">
+                <div class="card-content">
+                    <h3>Executive Suite</h3>
+                    <p>Luxurious 900 sq ft suite with strip views</p>
+                    <div class="price-and-book-now">
+                        <p class="price">From $499/night</p>
+                        <a class="button-link" href="lotus-reserve-your-stay.html">Book Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="Immagini_Stanze/presidential-suite.jpg" alt="Presidential Suite">
+                <div class="card-content">
+                    <h3>Presidential Suite</h3>
+                    <p>Ultimate 1500 sq ft luxury experience</p>
+                    <div class="price-and-book-now">
+                        <p class="price">From $999/night</p>
+                        <a class="button-link" href="lotus-reserve-your-stay.html">Book Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="Immagini_Stanze/comfortRoom.jpg" alt="Comfort Room">
+                <div class="card-content">
+                    <h3>Comfort Room</h3>
+                    <p>Bright and stylish 350 sq ft</p>
+                    <div class="price-and-book-now">
+                        <p class="price">From $199/night</p>
+                        <a class="button-link" href="lotus-reserve-your-stay.html">Book Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="Immagini_Stanze/Family Comfort.jpg" alt="Family Comfort Room">
+                <div class="card-content">
+                    <h3>Family Comfort Room</h3>
+                    <p>Inviting 600 sq ft room designed for families</p>
+                    <div class="price-and-book-now">
+                        <p class="price">From $549/night</p>
+                        <a class="button-link" href="lotus-reserve-your-stay.html">Book Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="Immagini_Stanze/Family Suite.jpg" alt="Family Suite">
+                <div class="card-content">
+                    <h3>Family Suite</h3>
+                    <p>Spacious 900 sq ft family suite</p>
+                    <div class="price-and-book-now">
+                        <p class="price">From $799/night</p>
+                        <a class="button-link" href="lotus-reserve-your-stay.html">Book Now</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <script>
+
+        const cards = document.querySelectorAll('.card');
+
+        cards.forEach(card => {
+            card.addEventListener('mouseenter', () => {
+                card.style.boxShadow = '0 0 20px var(--tertiary-color)';
+            });
+            card.addEventListener('mouseleave', () => {
+                card.style.boxShadow = 'none';
+            });
+        });
+    </script>
+
+</body>
+
+</html>

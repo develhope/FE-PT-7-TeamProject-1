@@ -1,0 +1,197 @@
+body {
+  font-family: 'Playfair Display', serif;
+  background-color: #0B1120;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.las-vegas {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 8rem;
+  max-width: 1200px;
+  margin: auto;
+  gap: 2rem;
+}
+
+.las-vegas .content {
+  flex: 1 1 55%;
+  order: 1;
+}
+
+.image {
+  flex: 1 1 40%;
+  order: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image img {
+  max-width: 80%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+}
+
+.las-vegas .content h1 {
+  font-size: 3rem;
+  color: #c4a55f;
+  margin-bottom: 0.2em;
+}
+
+.las-vegas .content h2 {
+  font-size: 1.5rem;
+  color: #c4a55f;
+  margin-bottom: 1em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.las-vegas .content p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #f5f5f5;
+}
+
+/* Card Styles */
+.card {
+  background-color: #1A1F2E;
+  border: 2px solid #C4A55F;
+  width: calc(50% - 2rem);
+  max-width: 750px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+}
+
+.card.reverse {
+  flex-direction: row-reverse;
+}
+
+.card .image-container {
+  position: relative;
+  width: 40%;
+  min-width: 300px;
+}
+
+.card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.dots {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+.dot {
+  height: 12px;
+  width: 12px;
+  margin: 0 4px;
+  background-color: #c4a55f;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+.dot.active {
+  opacity: 1;
+}
+
+.card .content {
+  width: 60%;
+  padding: 1.5rem;
+  box-sizing: border-box;
+}
+
+.card .content h2 {
+  color: #C4A55F;
+}
+
+.price-book {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.price {
+  margin: 0;
+  font-weight: bold;
+}
+
+button {
+  background-color: #C4A55F;
+  color: #0B1120;
+  cursor: pointer;
+  padding: 12px 24px;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  font-weight: 900;
+  transition: background-color 0.5s ease;
+  border: none;
+  margin-left: auto;
+}
+
+.change-color button {
+  background-color: #c4a55f;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.5s, color 0.5s;
+}
+
+.change-color button:hover {
+  background-color: #0b1120;
+  color: #c4a55f;
+}
+
+/* Media query per iPhone 14 Pro Max */
+@media only screen and (max-width: 430px) {
+
+  .las-vegas {
+    padding: 4rem 1rem; /* Riduce il padding per adattarsi allo schermo */
+  }
+
+  .card {
+    width: 100%; /* Le card occupano tutta la larghezza dello schermo */
+    flex-direction: column; /* Dispone gli elementi della card in colonna */
+  }
+
+  .card .image-container {
+    width: 100%; /* L'immagine occupa tutta la larghezza della card */
+    min-width: auto;
+  }
+
+  .card .content {
+    width: 100%; /* Il contenuto occupa tutta la larghezza della card */
+    padding: 1rem;
+  }
+
+  button {
+    font-size: 1rem; /* Riduce la dimensione del testo del bottone */
+    padding: 10px 15px; /* Riduce il padding del bottone */
+  }
+}
+
+

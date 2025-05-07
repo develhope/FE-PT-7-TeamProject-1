@@ -1,0 +1,432 @@
+.body-spa-booking {
+    background-color: #0B1120;
+    min-height: calc(100vh - 80px);
+}
+.spa-container {
+    max-width: 1200px;
+    font-family: Arial, sans-serif;
+    background-color: #0B1120;
+    color: #ffffff;
+    margin: 0 auto; 
+    margin-top: 80px; /* Add space to push content below the navbar */
+    padding: 20px;
+    display: flex; 
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+    min-height: 100vh;
+}
+
+.treatment-cards-header, .spa-header {
+    text-align: center;
+    color: #C4A55F;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+.spa-header {
+    font-family: 'inter', serif;
+    font-size: 36px;
+    margin-bottom: 70px;
+}
+.treatment-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.treatment-card {
+    background-color: #1A1F2E;
+    border: 1px solid #C4A55F;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: #a4894e;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.treatment-card h2 {
+    color: #C4A55F;
+    font-size: 24px;
+    margin-bottom: 10px;
+    position: relative;
+    z-index: 2;
+}
+
+.treatment-card p {
+    font-size: 16px;
+    margin-bottom: 10px;
+    position: relative;
+    z-index: 2;
+}
+
+.treatment-card label {
+    display: block;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #a4894e;
+    position: relative;
+    z-index: 2;
+}
+
+.treatment-card input,
+.treatment-card select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #C4A55F;
+    border-radius: 8px;
+    background-color: #13385B;
+    color: #a4894e;
+    position: relative;
+    z-index: 2;
+}
+
+.treatment-card .price {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #C4A55F;
+    position: relative;
+    z-index: 2;
+    display: inline-block;
+}
+
+.treatment-card .add-to-cart {
+    background-color: #C4A55F;
+    color: #0B1120;
+    text-align: center;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 900;
+    font-size: 1.1rem;
+    font-family: 'Inter', serif;
+    transition: background-color 0.5s ease;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.treatment-card .add-to-cart:hover {
+    background-color: #0B1120;
+    color: #C4A55F;
+}
+
+.treatment-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    border-radius: 8px;
+}
+
+.treatment-card:nth-child(1) {
+    background-image: url('images/massage-therapy.jpg');
+}
+
+.treatment-card:nth-child(2) {
+    background-image: url('images/facial-treatments.jpg');
+}
+
+.treatment-card:nth-child(3) {
+    background-image: url('images/hydrotherapy.jpg');
+}
+
+.treatment-card:nth-child(4) {
+    background-image: url('images/wellness-center.jpg');
+}
+
+.card-image-spa {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    margin-top: 10px;
+    height: 300px;
+}
+
+.card-image-spa img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), filter 0.3s ease;
+    filter: brightness(0.9);
+}
+
+.card-image-spa:hover img,
+.card-image-spa:focus-within img,
+.card-image-spa:active img {
+    transform: translateY(-120%);
+    filter: brightness(1.1);
+}
+
+.card-image-spa::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0);
+    z-index: 2;
+    transition: background 0.4s ease;
+}
+
+.card-image-spa:hover::before {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.spa-booking-form {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #152238;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: top 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    justify-content: flex-start;
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+.card-image-spa:hover .spa-booking-form,
+.card-image-spa:focus-within .spa-booking-form,
+.card-image-spa:active .spa-booking-form {
+    top: 0;
+}
+
+.spa-booking-form label {
+    font-size: 12px;
+    font-weight: bold;
+    color: #C4A55F;
+    margin-bottom: 4px;
+    display: inline-block;
+    width: 120px;
+    max-width: 150px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.spa-booking-form input,
+.spa-booking-form select {
+    width: 100%;
+    max-width: 150px;
+    padding: 6px;
+    border: 1px solid #C4A55F;
+    border-radius: 8px;
+    background-color: #152238;
+    color: #a4894e;
+    font-size: 12px;
+}
+
+.spa-booking-form .price {
+    font-size: 14px;
+    font-weight: bold;
+    color: #C4A55F;
+    margin-top: 8px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.spa-booking-form .add-to-cart {
+    padding: 6px 12px;
+    background-color: #C4A55F;
+    border: none;
+    border-radius: 8px;
+    color: #152238;
+    font-weight: bold;
+    font-size: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: auto;
+}
+
+.spa-booking-form .add-to-cart:hover {
+    background-color: #152238;
+    color: #a4894e;
+}
+
+.guest-info-spa {
+    background-color: #152238;
+    padding: 30px;
+    border: 1px solid #C4A55F;
+    border-radius: 8px;
+    max-width: 400px;
+    margin: 0 auto 40px;
+    color: #a4894e;
+}
+
+.guest-info-spa h2 {
+    text-align: center;
+    color: #C4A55F;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.guest-info-spa form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.guest-info-spa input {
+    padding: 10px;
+    border: 1px solid #C4A55F;
+    border-radius: 8px;
+    background-color: #152238;
+    color: #a4894e;
+    font-size: 16px;
+}
+
+.guest-info-spa button {
+    background-color: #C4A55F;
+    color: #0B1120;
+    text-align: center;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 900;
+    font-size: 1.1rem;
+    font-family: 'Inter', serif;
+    transition: background-color 0.5s ease;
+    cursor: pointer;
+}
+
+.guest-info-spa button:hover {
+    background-color: #0B1120;
+    color: #C4A55F;
+}
+
+.order-summary-spa {
+    background-color: #1A1F2E;
+    border: 1px solid #C4A55F;
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    border-radius: 8px;
+    padding: 15px;
+    color: #C4A55F;
+    width: 300px;
+    height: 200px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    cursor: move;
+    overflow-y: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.order-summary-spa.dragging {
+    opacity: 0.8;
+    cursor: grabbing;
+}
+
+.order-summary-spa h3 {
+    font-size: 18px;
+    color: #C4A55F;
+    margin-bottom: 10px;
+    font-family: "Playfair Display", serif;
+}
+
+.order-summary-spa ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-height: calc(100% - 80px);
+    overflow-y: auto;
+}
+
+.order-summary-spa ul li {
+    background-color: #1A1F2E;
+    border-radius: 8px;
+    display: grid;
+    grid-template-columns: 50px 1fr 80px 30px;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    padding: 5px;
+}
+
+.order-summary-spa ul li:hover {
+    background-color: #C4A55F;
+    color: #0B1120;
+}
+
+.order-summary-spa ul li img {
+    width: 50px;
+    height: 50px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.order-summary-spa ul li span {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.order-summary-spa ul li .remove-item-spa {
+    color: #C4A55F;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    background: none;
+    border: none;
+    transition: color 0.3s ease;
+}
+
+.order-summary-spa ul li .remove-item-spa:hover {
+    color: #0B1120;
+}
+
+.order-summary-spa ul::-webkit-scrollbar {
+    width: 8px;
+}
+
+.order-summary-spa ul::-webkit-scrollbar-thumb {
+    background-color: #C4A55F;
+    border-radius: 8px;
+}
+
+.order-summary-spa ul::-webkit-scrollbar-thumb:hover {
+    background-color: #0B1120;
+}
+
+.order-total-spa {
+    align-self: flex-start;
+    margin-top: auto;
+    font-size: 20px;
+    font-weight: bold;
+    color: #C4A55F;
+    text-align: left;
+}
+
+.order-total-spa strong {
+    color: #C4A55F;
+    text-align: left;
+    font-size: 20px;
+
+}
+
+@media (max-width: 768px) {
+    .treatment-cards {
+        grid-template-columns: 1fr;
+    }
+}

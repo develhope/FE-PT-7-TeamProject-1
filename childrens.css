@@ -1,0 +1,265 @@
+/* Stili globali */
+.children-area-body-romina {
+    font-family: 'inter', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0B1120; /* Colore di sfondo scuro */
+    color: #333;
+    min-height: calc(100vh - 80px);
+  }
+  
+  /* Sezione principale */
+  .children-area-romina {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+  
+  /* Titolo e sottotitolo */
+  .children-area-h1-children {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 10px;
+    color: #C4A55F; 
+    text-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); /* Effetto rilievo */
+  }
+  
+  .children-area-subtitle {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #fff; /* Colore bianco per il sottotitolo */
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Effetto rilievo */
+  }
+  
+  /* Contenitore delle card */
+  .children-area-section-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+  }
+  
+  /* Stile delle card */
+  .children-area-card-tilt-card {
+    width: 300px;
+    perspective: 1000px;
+    margin: 10px;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+  }
+  
+  .children-area-card-tilt-card:hover {
+    transform: scale(1.05); /* Leggero zoom */
+    box-shadow: 0 10px 20px rgba(255, 204, 0, 0.5); /* Effetto luce */
+  }
+  
+  .children-area-card-inner {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    transform-style: preserve-3d;
+    transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+  }
+  
+  .children-area-card-tilt-card:hover .children-area-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Parte anteriore e posteriore */
+  .children-area-card-front,
+  .children-area-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+  }
+  
+  .children-area-card-front {
+    background-size: cover;
+    background-position: center;
+    transform: rotateY(0deg);
+    box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.5); /* Effetto luce interna */
+  }
+  
+  /* Ripristino del risalto del testo nella parte frontale */
+  .children-area-card-front .children-area-inner p,
+  .children-area-card-front .children-area-inner span {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    text-shadow: 0 4px 6px rgba(0, 0, 0, 0.8); /* Effetto rilievo */
+  }
+  
+  .children-area-card-front:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Oscuramento per migliorare la leggibilità */
+    z-index: 1;
+    border-radius: 10px;
+  }
+  
+  .children-area-card-back {
+    background-color: #1a2b48; /* Colore blu scuro per il retro */
+    transform: rotateY(180deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Ombra */
+  }
+  
+  /* Effetto rilievo e movimento per il testo */
+  .children-area-card-back .children-area-inner p {
+    font-size: 1.2rem;
+    color: #fff;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8); /* Effetto rilievo */
+    opacity: 0;
+    transform: translateY(20px) rotateX(15deg); /* Movimento iniziale */
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+  
+  .children-area-card-tilt-card:hover .children-area-card-back .children-area-inner p {
+    opacity: 1;
+    transform: translateY(0) rotateX(0); /* Movimento finale */
+  }
+  
+  /* Contenuto interno */
+  .children-area-inner {
+    padding: 20px;
+  }
+  
+  .children-area-inner p {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .children-area-inner span {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.8);
+  }
+  
+  /* Titolo della sezione attività */
+  .children-area-activities-title {
+    font-size: 2rem;
+    text-align: center;
+    margin: 40px 0 20px;
+    color: #C4A55F; /* Colore oro per il titolo */
+    text-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); /* Effetto rilievo */
+  }
+  
+  /* Sezione attività */
+  .children-area-activities {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Due colonne */
+    gap: 20px; /* Maggiore spazio tra i rettangoli */
+    margin-top: 20px;
+  }
+  
+  .children-area-activity-box {
+    background-color: #1a2b48; /* Colore blu scuro */
+    border-radius: 8px; /* Maggiore arrotondamento */
+    padding: 15px; /* Maggiore padding interno */
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: #fff; /* Testo bianco */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    font-size: 0.9rem; /* Dimensione del testo */
+  }
+  
+  .children-area-activity-box:hover {
+    box-shadow: 0 6px 12px rgba(255, 204, 0, 0.5); /* Effetto luce */
+    transform: scale(1.05);
+  }
+  
+  .children-area-activity-box p {
+    font-size: 1rem; /* Dimensione del titolo */
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .children-area-activity-box span {
+    font-size: 0.9rem; /* Dimensione del sottotitolo */
+  }
+  
+  /* Titolo della sezione informazioni */
+  .children-area-info-title {
+    font-size: 2rem;
+    text-align: center;
+    margin: 40px 0 20px;
+    color: #C4A55F; /* Colore oro per il titolo */
+    text-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); /* Effetto rilievo */
+  }
+  
+  /* Sezione informazioni */
+  .children-area-info-section {
+    display: grid; /* Disposizione a griglia */
+    grid-template-columns: repeat(2, 1fr); /* Due colonne */
+    gap: 40px; /* Maggiore spazio tra i rettangoli */
+    justify-content: center; /* Centra i rettangoli orizzontalmente */
+    margin: 20px auto; /* Centra la sezione nella pagina */
+    max-width: 800px; /* Limita la larghezza totale della sezione */
+  }
+  
+  .children-area-info-box {
+    background-color: #1a2b48; /* Colore blu scuro */
+    border-radius: 8px; /* Maggiore arrotondamento */
+    padding: 20px; /* Maggiore padding interno */
+    text-align: left; /* Allineamento a sinistra */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: #fff; /* Testo bianco */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    font-size: 0.9rem; /* Dimensione del testo */
+    width: 100%; /* Adatta alla colonna */
+    max-width: 350px; /* Limite massimo per la larghezza */
+    display: flex; /* Per allineare il contenuto */
+    flex-direction: column; /* Disposizione verticale del contenuto */
+    justify-content: space-between; /* Distribuisce il contenuto uniformemente */
+    height: auto; /* Altezza dinamica */
+  }
+  
+  .children-area-info-box:hover {
+    box-shadow: 0 6px 12px rgba(255, 204, 0, 0.5); /* Effetto luce */
+    transform: scale(1.05);
+  }
+  
+  .children-area-info-box h3 {
+    font-size: 1.3rem; /* Dimensione del titolo */
+    margin-bottom: 10px; /* Spazio sotto il titolo */
+    color: #C4A55F; /* Colore oro per i titoli */
+  }
+  
+  .children-area-info-box p {
+    font-size: 0.9rem; /* Dimensione del testo */
+    color: #fff;
+    line-height: 1.5; /* Altezza della linea */
+  }
+  
+  /* Animazione di comparsa sofisticata */
+  @keyframes fadeInZoom {
+    from {
+      opacity: 0;
+      transform: scale(0.95) translateY(30px); /* Leggero zoom e spostamento verso il basso */
+    }
+    to {
+      opacity: 1;
+      transform: scale(1) translateY(0); /* Posizione finale */
+    }
+  }
+  
+  .fade-in-zoom {
+    opacity: 0; /* Inizialmente nascosto */
+    animation: fadeInZoom 1s cubic-bezier(0.25, 0.1, 0.25, 1) forwards; /* Animazione sofisticata */
+  }

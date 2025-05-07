@@ -1,0 +1,200 @@
+html,
+body {
+    margin: 0;
+}
+
+.footer-lotus-las-vegas {
+    border-top: 1px solid #C4A55F;
+    background-color: #0B1120;
+    width: 100%;
+    min-height: 370px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    font-family: 'Inter', serif;
+}
+
+.logo-of-footer img {
+    width: 80px;
+}
+
+.logo-and-title-of-footer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title-of-footer h2 {
+    color: #C4A55F;
+    margin: 0;
+    font-size: 1.8rem;
+    font-weight: 900;
+
+}
+
+.numbers-of-footer-area {
+    display: flex;
+    margin: 0;
+    color: #C4A55F;
+    font-size: 1.2rem;
+    gap: 20px;
+}
+
+.numbers {
+    color: white;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.social-media-footer {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.social-media-link-footer {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #1A1F2E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.5s ease;
+}
+
+.icon-wrapper {
+    height: 20px;
+}
+
+.social-media-link-footer svg {
+    color: white;
+}
+
+#hover-social-media:hover {
+    background-color: #C4A55F;
+}
+
+.footer-lotus-las-vegas-links {
+    display: flex;
+    gap: 50px;
+    margin-top: 20px;
+}
+
+.footer-lotus-las-vegas-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 500;
+    font-style: oblique 0.25deg;
+    transition: color 0.5s ease;
+
+}
+
+.footer-lotus-las-vegas-links a:hover {
+    color: #8a8888;
+}
+
+.footer-divider {
+    width: 95%;
+    border-top: 2px solid #C4A55F;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.privacy-legal-of-footer-lotus-las-vegas {
+    width: 95%;
+    display: flex;
+    gap: 20px;
+    color: rgba(255, 255, 255, 0.3);
+    font-size: 12.5px;
+}
+
+.privacy-legal-of-footer-lotus-las-vegas p {
+    margin: 0;
+}
+
+.privacy-legal-of-footer-lotus-las-vegas a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.508);
+    transition: color 0.3s ease;
+}
+
+.privacy-legal-of-footer-lotus-las-vegas a:hover {
+    color: #ffffffbb;
+}
+
+.copy-message {
+    position: fixed;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #C4A55F;
+    color: #0B1120;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-family: 'Inter', serif;
+    font-size: 1rem;
+    font-weight: 900;
+}
+
+
+@media (max-width: 600px) {
+    .footer-lotus-las-vegas {
+        height: auto;
+        padding: 20px;
+    }
+
+    .logo-of-footer img {
+        width: 60px;
+    }
+
+    .numbers-of-footer-area {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-lotus-las-vegas-links {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .privacy-legal-of-footer-lotus-las-vegas {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 900px) {
+    .footer-lotus-las-vegas {
+        height: auto;
+        padding: 30px;
+    }
+
+    .logo-of-footer img {
+        width: 70px;
+    }
+
+    .footer-lotus-las-vegas-links {
+        gap: 30px;
+    }
+
+}
+
+@media (min-width: 1024px) {
+    .footer-lotus-las-vegas {
+        height: 370px;
+        padding: 40px 40px 20px;
+    }
+
+    .logo-of-footer img {
+        width: 80px;
+    }
+
+    .footer-lotus-las-vegas-links {
+        gap: 50px;
+    }
+}

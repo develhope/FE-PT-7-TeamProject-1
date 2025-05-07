@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="faq-footer.css">
+</head>
+
+<body>
+    <div class="footer-faq-section">
+        <div class="footer-faq-links">
+            <a href="#">FAQ</a>
+            <a href="contact-us-footer.html">Contact Us</a>
+            <a href="cancel-reservation-footer.html">Cancel Reservation</a>
+        </div>
+
+        <div class="faq-question-and-answer-container">
+            <div class="footer-faq-item">
+                <button class="footer-faq-question">What VIP services do you offer?</button>
+
+                <div class="footer-faq-answer">We offer private check-in, room upgrades, welcome gifts, and personalized
+                    concierge
+                </div>
+            </div>
+
+            <div class="footer-faq-item">
+                <button class="footer-faq-question">What are the check-in and check-out times?</button>
+
+                <div class="footer-faq-answer">Check-in is from 3 PM, and check-out is until 11 AM
+                </div>
+            </div>
+
+            <div class="footer-faq-item">
+                <button class="footer-faq-question">Do I need to book the gourmet restaurants in advance?</button>
+
+                <div class="footer-faq-answer">Yes, we highly recommend booking in advance to ensure availability.
+                </div>
+            </div>
+
+            <div class="footer-faq-item">
+                <button class="footer-faq-question">Is spa access included in my stay?</button>
+
+                <div class="footer-faq-answer">Spa access is included for guests who book premium rooms or higher
+                    categories.
+                </div>
+            </div>
+
+
+            <div class="footer-faq-item">
+                <button class="footer-faq-question">Is parking available and included?</button>
+
+                <div class="footer-faq-answer">Yes, we provide free parking for all registered guests.
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <script>
+        document.querySelectorAll('.footer-faq-question').forEach(button => {
+            button.addEventListener('click', () => {
+                const answer = button.nextElementSibling
+                answer.classList.toggle('is-visible')
+            })
+        })
+    </script>
+
+</body>
+
+</html>

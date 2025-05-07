@@ -1,0 +1,144 @@
+body { 
+    margin: 0;
+    font-family: 'Playfair Display', serif;
+    background-color: #0a0f1a;
+}
+  
+/* Nascondi il popup inizialmente */
+.popup-overlay {
+    display: none;
+}
+
+.popup-box img {
+    max-width: 20%; /* L'immagine non supera la larghezza del contenitore */
+    height: auto; /* Mantiene le proporzioni */
+    margin-bottom: 15px; /* Spaziatura inferiore */
+    border-radius: 8px; /* Aggiunge angoli arrotondati */
+}
+
+.popup-overlay { /* sfondo della pagina */
+    position: fixed;
+    top: 0; left: 0;
+    width: 100vw; height: 100vh;
+    background: rgba(8, 11, 16, 0.95); /* Corretto il valore */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    animation: fadeIn 0.5s ease;
+}
+  
+.popup-box { /* sfondo del popup */
+    background-color: #0B1120;
+    border: 2px solid #C4A55F;
+    border-radius: 10px;
+    padding: 40px 30px;
+    text-align: center;
+    width: 400px;
+    color: #ffffff;
+    box-shadow: 0 0 20px rgba(198, 166, 105, 0.4);
+    position: relative;
+}
+  
+.popup-box h1 {
+    font-size: 2.2em;
+    margin: -10px 0 0 0; /* Margine superiore negativo */
+    color: #C4A55F;
+}
+  
+.popup-box p {
+    font-size: 0.8em; /* Migliorata la leggibilità */
+    margin: 0.5em 0;
+    color: #ffffff;
+    font-weight: 100;
+}
+  
+.popup-box input[type="email"] { /* campo di input email */
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    margin: 1em 0;
+    font-size: 1em;
+    background-color: #C4A55F;
+    color: #ffffff;
+}
+  
+.popup-box input[type="submit"] { /* bottone di invio */
+    width: 100%;
+    padding: 12px;
+    background-color: #0B1120;
+    color: #C4A55F;
+    border: none;
+    border-radius: 8px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Aggiunto effetto di transizione */
+}
+  
+.popup-box input[type="submit"]:hover {
+    background-color: #3c486a; /* Colore al passaggio del mouse */
+    color: #C4A55F; /* Colore del testo al passaggio del mouse */
+}
+  
+.skip-link { /* link per chiudere il popup */
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: #C4A55F;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.75em;
+}
+  
+.privacy-note { /* nota sulla privacy */
+    font-size: 0.75em; /* Migliorata la leggibilità */
+    margin-top: 15px;
+    color: #ffffff;
+}
+
+* {
+    box-sizing: border-box;
+  }
+  
+@keyframes fadeIn { /* Animazione di apparizione */
+    from { opacity: 0; transform: scale(0.95); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+/* Media query per iPhone 14 Pro Max */
+@media only screen and (max-width: 430px) {
+    .popup-box {
+        width: 90%; /* Riduce la larghezza del popup per adattarsi allo schermo */
+        padding: 20px; /* Riduce il padding per un layout più compatto */
+        font-size: 0.9em; /* Riduce leggermente la dimensione del testo */
+    }
+
+    .popup-box h1 {
+        font-size: 1.8em; /* Riduce la dimensione del titolo */
+        margin: 0 0 10px; /* Aggiunge margine inferiore */
+    }
+
+    .popup-box p {
+        font-size: 0.75em; /* Riduce la dimensione del testo */
+        margin: 0.5em 0; /* Migliora il distanziamento */
+    }
+
+    .popup-box input[type="email"] {
+        font-size: 0.9em; /* Riduce la dimensione del testo nell'input */
+        padding: 10px; /* Riduce il padding */
+    }
+
+    .popup-box input[type="submit"] {
+        font-size: 0.9em; /* Riduce la dimensione del testo nel bottone */
+        padding: 10px; /* Riduce il padding */
+    }
+
+    .skip-link {
+        font-size: 0.7em; /* Riduce la dimensione del link per chiudere il popup */
+        top: 5px; /* Regola la posizione */
+        right: 10px;
+    }
+}
+
+

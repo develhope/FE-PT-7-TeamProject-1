@@ -1,0 +1,93 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0B1120;
+    padding: 10px 20px;
+    border-bottom: 1px solid #C4A55F;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+.navbar .navbar-container {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.nome-resort {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-image {
+    width: 30px; 
+    height: 30px;
+}
+
+.nome-resort h1 {
+    color: #C4A55F;
+    font-size: 20px; 
+    font-family: 'Inter', serif;
+    font-weight: 600;
+    margin: 0;
+}
+
+.nav-links-navbar {
+    display: flex;
+    gap: 30px; 
+    align-items: center;
+    margin-left: auto; 
+}
+
+.nav-links-navbar a {
+    color: #f5f5f5;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    transition: color 0.3s ease;
+}
+
+.nav-links-navbar a:hover {
+    color: #C4A55F;
+}
+
+.book-now {
+    background-color: #C4A55F;
+    color: #0B1120;
+    text-align: center;
+    padding: 8px 20px; 
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.book-now:hover {
+    background-color: #0B1120;
+    color: #C4A55F;
+    border: 1px solid #C4A55F;
+}
+
+@media (max-width: 768px) {
+    .navbar .navbar-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links-navbar {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .book-now {
+        margin-top: 10px;
+    }
+}

@@ -1,0 +1,191 @@
+.noleggio-body {
+  background-color: #0B1120;
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: calc(100vh - 80px);
+}
+
+.header-auto {
+  text-align: center;
+  padding: 2rem;
+  background-color: #0B1120;
+}
+
+.h2-auto {
+  color: #C4A55F;
+}
+
+/* Contenitore slideshow */
+.slideshow-container {
+  max-width: 800px;
+  height: 600px;
+  aspect-ratio: 16 / 9; /* Mantiene proporzioni costanti */
+  overflow: hidden;
+  position: relative;
+  margin: 0 auto;
+  border-radius: 12px;
+  background-color: #0B1120;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Immagini */
+.mySlides img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  display: block;
+  border-radius: 12px;
+}
+
+/* Puntini */
+.dot-container {
+  text-align: center;
+  margin-top: 30px; /* Distanza dai bordi del container */
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 6px; /* Aumenta lo spazio tra i puntini */
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+
+/*Filtri*/
+.filtri {
+  background-color: #0B1120;
+  padding: 40px 20px;
+  color: #C4A55F;
+  text-align: center;
+  border-top: 1px solid #C4A55F;
+  border-bottom: 1px solid #C4A55F;
+  margin-top: 60px;
+  font-family: 'Inter', sans-serif;
+}
+
+.filtri h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+#filtro-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+#filtro-form select, 
+#filtro-form input[type="number"] {
+  background-color: #1A1F2E;
+  color: #fff;
+  border: 1px solid #C4A55F;
+  padding: 12px 16px;
+  border-radius: 8px;
+  font-size: 1rem;
+  min-width: 180px;
+  outline: none;
+  appearance: none;
+  font-family: 'Inter', sans-serif;
+}
+
+#filtro-form select:focus, 
+#filtro-form input[type="number"]:focus {
+  border-color: #fff;
+}
+
+#filtro-form button {
+  background-color: #C4A55F;
+  color: #0B1120;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#filtro-form button:hover {
+  background-color: #0B1120;
+  color: #C4A55F;
+  border: 1px solid #C4A55F;
+}
+
+.catalogo {
+  padding: 2rem;
+}
+
+
+/*Card delle auto*/
+.auto-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 colonne per riga */
+  gap: 40px; /* Distanza tra le card */
+  max-width: 1200px;
+  margin-top: 40px;
+  padding: 20px;
+}
+
+.auto-card {
+  background-color: #1A1F2E;
+  color: white;
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
+  transition: transform 0.3s ease;
+  height: 450px;
+  width: 350px;
+}
+
+.auto-card:hover {
+  transform: scale(1.05);
+}
+
+.auto-card img {
+  width: 100%;
+  border-radius: 8px;
+  height: 65%;
+}
+
+.auto-card p {
+  color: #ccc;
+  font-weight: 500;
+}
+
+.link-bottone {
+  background-color: #C4A55F;
+  color: #0B1120;
+  text-align: center;
+  padding: 12px 24px;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 900;
+  font-size: 1.1rem;
+  transition: background-color 0.5s ease;
+  display: inline-block;
+  font-family: 'Inter', sans-serif;
+}
+
+.link-bottone:hover {
+  background-color: #0B1120;
+  color: #C4A55F;
+  border: 1px solid #C4A55F;
+}
+

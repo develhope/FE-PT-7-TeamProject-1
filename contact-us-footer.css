@@ -1,0 +1,73 @@
+body {
+    margin: 0;
+}
+
+.footer-contact-section {
+    background-color: #0B1120;
+    color: white;
+    padding: 40px;
+    height: 555px;
+}
+
+.footer-contact-nav-links {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.footer-contact-nav-links a {
+    color: white;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+
+}
+
+.footer-contact-nav-links a:hover {
+    border-color: white;
+}
+
+.footer-contact-form-layout-container {
+    display: flex;
+}
+
+.footer-contact-form-box {
+    background-color: #111827;
+    padding: 30px;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.footer-form-with-name-email-message {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.footer-form-with-name-email-message label {
+    font-size: 1rem;
+    color: #ccc;
+}
+
+.footer-form-with-name-email-message input,
+.footer-form-with-name-email-message textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #1f2937;
+    background-color: #0f172a;
+    color: white;
+    resize: none;
+}
+
+.footer-form-with-name-email-message button {
+    padding: 14px;
+    background-color: #B8995E;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    color: black;
+    cursor: pointer;
+}
+
+.footer-form-with-name-email-message button:hover {
+    background-color: #ffffff;
+}

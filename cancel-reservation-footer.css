@@ -1,0 +1,71 @@
+body {
+    margin: 0;
+}
+
+.footer-cancel-reservation-section {
+    background-color: #0B1120;
+    color: white;
+    padding: 40px;
+    height: 550px;
+}
+
+.footer-cancel-reservation-links {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.footer-cancel-reservation-links a {
+    color: white;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+}
+
+.footer-cancel-reservation-links a:hover {
+    border-color: white;
+}
+
+.footer-cancel-reservation-form-container {
+    display: flex;
+}
+
+.cancel-reservation-form-boxes {
+    background-color: #111827;
+    padding: 30px;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.footer-form-with-reservation-and-email {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.footer-form-with-reservation-and-email label {
+    font-size: 1rem;
+    color: #ccc;
+
+}
+
+.footer-form-with-reservation-and-email input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #1f2937;
+    background-color: #0f172a;
+    color: white;
+}
+
+.footer-form-with-reservation-and-email button {
+    padding: 14px;
+    background-color: #B8995E;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    color: black;
+    cursor: pointer;
+}
+
+.footer-form-with-reservation-and-email button:hover {
+    background-color: #ffffff;
+}

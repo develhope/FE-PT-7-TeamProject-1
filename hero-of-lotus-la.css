@@ -1,0 +1,78 @@
+body {
+    margin: 0;
+  }
+  
+  .lotus-hero-main-section {
+    position: relative;
+    background: url('lotus-pic/homepage_LE_upscale_magic_x4_strength_95_similarity_30.jpg') no-repeat center center;
+    background-size: cover;
+    height: 633px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Inter', serif;
+    color: rgba(255, 255, 255, 0.9);
+  }
+  
+  .lotus-hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+  }
+  
+  .lotus-hero-content {
+    position: relative;
+    z-index: 2;
+    padding: 0 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .lotus-hero-title {
+    font-size: 4rem;
+    margin: 0;
+  }
+  
+  .lotus-hero-subtitle {
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-style: oblique 0.2deg;
+    color: #C4A55F;
+    margin-top: 20px;
+  }
+  
+  .lotus-hero-link-button {
+    width: 40%;
+    background-color: #C4A55F;
+    color: #0B1120;
+    padding: 12px 24px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    font-weight: 900;
+    transition: background-color 0.5s ease;
+  }
+  
+  .lotus-hero-link-button:hover {
+    background-color: #0B1120;
+    color: #C4A55F;
+  }
+  
+  @media (max-width: 600px) {
+    .lotus-hero-title {
+      font-size: 2.5rem;
+    }
+  
+    .lotus-hero-subtitle {
+      font-size: 1.1rem;
+    }
+  
+    .lotus-hero-link-button {
+      font-size: 1rem;
+      white-space: nowrap;
+    }
+  }
+  

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lotus Las Vegas Popup</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="newsletterPopup.css" />
+</head>
+
+<body>
+  <main>
+    <div class="popup-overlay" id="popup">
+      <div class="popup-box">
+        <a class="skip-link" href="#" onclick="document.getElementById('popup').style.display='none'">Skip</a>
+        <img src="imagesFrancy/logo.png" alt="Lotus Las Vegas Logo" class="logo" />
+        <h1>Lotus Las Vegas</h1>
+        <p><strong>Subscribe to get the Latest News</strong></p>
+        <p>
+          Don't miss out on our latest news, updates, tips and special offers
+        </p>
+
+        <form action="#" method="post">
+          <input type="email" id="email" name="email" placeholder="Enter your email" required />
+          <input type="submit" value="Subscribe" />
+        </form>
+        <div class="privacy-note">
+          This site is protected by reCAPTCHA and the Google Privacy Policy and
+          Terms of Service apply.
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    // Aspetta 4 secondi e poi mostra il popup
+    window.addEventListener("load", function () {
+      setTimeout(function () {
+        const popup = document.getElementById("popup");
+        popup.style.display = "flex";
+        popup.setAttribute("aria-hidden", "false");
+      }, 4000); // 4000 millisecondi = 4 secondi
+    });
+  </script>
+</body>
+
+</html>

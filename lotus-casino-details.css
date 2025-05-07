@@ -1,0 +1,213 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+/* HTML: Scroll behavior per tutta la pagina */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Main: Font family e text alignment */
+main {
+  font-family: 'Playfair Display', Georgia, serif;
+  text-align: center;
+}
+
+/* Colori principali */
+:root {
+  --primary-bg: #041031;
+  --gold: #B9936C;
+  --text-main: #EDE1CB;
+  --text-sub: #D5D9E2;
+  --hover-glow: rgba(185, 147, 108, 0.8);
+}
+
+/* Stile di base per il body */
+body {
+  background-color: var(--primary-bg);
+  color: var(--text-main);
+  margin: 0;
+  padding: 0;
+  text-align: center; /* Centra tutto il testo nel body */
+}
+
+/* Container centrale per centrare il contenuto */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Titoli principali */
+h1, h2, h3 {
+  color: var(--gold);
+}
+
+/* Animazione per il titolo principale */
+.main-title {
+  font-size: 3em;
+  margin-top: 60px;
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+/* Sottotitolo */
+.subtitle {
+  color: var(--text-sub);
+  font-size: 1.3em;
+  margin-bottom: 40px;
+}
+
+/* Sezione Hero del Casinò */
+.casino-hero {
+  padding: 60px 20px 40px;
+}
+
+/* Sezione delle caratteristiche del casinò */
+.casino-features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 40px;
+  padding: 20px;
+}
+
+/* Ogni singola feature */
+.feature {
+  background: rgba(255,255,255,0.02);
+  padding: 20px;
+  border-radius: 20px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.feature:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 20px var(--hover-glow);
+}
+
+/* Container delle immagini circolari */
+.image-container {
+  width: 220px;
+  height: 220px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Sezione eventi */
+.events-section {
+  padding: 60px 20px;
+  background-color: #030518;
+}
+
+.event-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.event-card {
+  background: rgba(255,255,255,0.03);
+  padding: 25px;
+  border-radius: 16px;
+  max-width: 300px;
+  text-align: left;
+  color: var(--text-main);
+  border-left: 3px solid var(--gold);
+  transition: transform 0.3s ease;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.event-card:hover {
+  transform: translateY(-10px);
+}
+
+/* Sezione offerte */
+.offers-section {
+  padding: 60px 20px;
+}
+
+.offers-list {
+  list-style: none;
+  padding: 0;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.offers-list li {
+  margin-bottom: 20px;
+  font-size: 1.2em;
+  background-color: rgba(255,255,255,0.03);
+  padding: 15px;
+  border-left: 4px solid var(--gold);
+  border-radius: 8px;
+  transition: background 0.3s ease;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.offers-list li:hover {
+  background-color: rgba(255,255,255,0.05);
+}
+
+/* Sezione contatti */
+.contact-section {
+  padding: 60px 20px 100px;
+}
+
+/* Pulsanti casinò */
+.casino-button {
+  display: inline-block;
+  padding: 15px 35px;
+  font-size: 1.1em;
+  background-color: var(--gold);
+  color: var(--primary-bg);
+  border-radius: 30px;
+  text-decoration: none;
+  margin-top: 20px;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+}
+
+.casino-button:hover {
+  background-color: var(--text-sub);
+  box-shadow: 0 0 15px var(--hover-glow);
+  transform: scale(1.05);
+}
+
+/* Animazione per il reveal delle features e degli eventi */
+.revealed {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+/* Animazione fade-in per i titoli */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsività mobile */
+@media (max-width: 768px) {
+  .main-title {
+    font-size: 2.2em;
+  }
+  .event-card, .feature {
+    width: 100%;
+  }
+}

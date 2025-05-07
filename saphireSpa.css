@@ -1,0 +1,157 @@
+
+.saphire-spa-e-wellness {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    background-color: #021226;
+    color: #021024;
+    color: #ffffff;
+    font-family: 'inter', sans-serif;
+}
+
+.saphire-content {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.saphire-title h2 {
+    color: #C4A55F;
+    text-align: left;
+    margin-bottom: 10px;
+    font-size: 36px;
+    font-family: 'inter', serif;
+}
+
+.saphire-title p {
+    margin-bottom: 20px;
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.section-box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+.box-title {
+    color: #C4A55F;
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-family: 'inter', serif;
+}
+.box {
+    position: relative;
+    overflow: hidden;
+    background-color: #13385B;
+    border: none;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    height: 104px;
+    width: 278px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.box img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 1;
+}
+
+.box:hover img {
+    opacity: 1;
+}
+
+.box strong {
+    position: relative;
+    z-index: 2;
+    color: #C4A55F;
+}
+
+.box p {
+    position: relative;
+    z-index: 2;
+    color: #fefbec;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.saphire-image {
+    flex: 1;
+    text-align: right;
+}
+
+.saphire-image img {
+    max-width: 93%;
+    margin-top: 30px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.book-now-spa {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #C4A55F;
+    color: #0B1120;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 900;
+    font-size: 1.2rem;
+    text-align: center;
+    transition: background-color 0.5s ease;
+    margin-top: 20px;
+    font-family: "Inter", sans-serif;
+    border: none;
+}
+
+.book-now-spa:hover {
+    background-color: #0B1120;
+    color: #C4A55F;
+    ;
+}
+
+@media (max-width: 768px) {
+    .saphire-spa-e-wellness {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .saphire-title {
+        margin-bottom: 20px;
+    }
+
+    .section-box {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .saphire-image {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .saphire-image img {
+        max-width: 90%;
+    }
+
+    .book-now-spa {
+        width: 100%;
+        margin-top: 20px;
+    }
+}

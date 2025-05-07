@@ -1,0 +1,67 @@
+[
+  {
+    "marca": "Audi",
+    "modello": "R8",
+    "tipo": "Sports",
+    "prezzo_giornaliero": 790,
+    "immagine": "./images/AudiR8.png",
+    "specifiche": {
+      "Engine": "5.2 V10",
+      "HP": "620",
+      "0-100 km/h (in seconds)": "3.1",
+      "Top Speed": "330 km/h"
+    }
+  },
+  {
+    "marca": "BMW",
+    "modello": "M8 Cabrio",
+    "tipo": "Sports",
+    "prezzo_giornaliero": 600,
+    "immagine": "./images/BMWM8.png",
+    "specifiche": {
+      "Engine": "4.4 V8 TwinPower",
+      "HP": "625",
+      "0-100 km/h (in seconds)": "3.3",
+      "Top Speed": "305 km/h"
+    }
+  },
+  {
+    "marca": "Mercedes-Benz",
+    "modello": "S Class W223",
+    "tipo": "Sedan",
+    "prezzo_giornaliero": 650,
+    "immagine": "./images/Mercedes.png",
+    "specifiche": {
+      "Engine": "3.0 I6 Turbo",
+      "HP": "435",
+      "0-100 km/h (in seconds)": "4.9",
+      "Top Speed": "250 km/h"
+    }
+  },
+  {
+    "marca": "Maserati",
+    "modello": "MC20",
+    "tipo": "Sports",
+    "prezzo_giornaliero": 800,
+    "immagine": "./images/MaseratiMC20.png",
+    "specifiche": {
+      "Engine": "3.0 V6 Nettuno",
+      "HP": "630",
+      "0-100 km/h (in seconds)": "2.9",
+      "Top Speed": "325 km/h"
+    }
+  },
+  {
+    "marca": "Ferrari",
+    "modello": "Purosangue",
+    "tipo": "SUV",
+    "prezzo_giornaliero": 3700,
+    "immagine": "./images/FerrariPurosangue.png",
+    "specifiche": {
+      "Engine": "6.5 V12",
+      "HP": "725",
+      "0-100 km/h (in seconds)": "3.3",
+      "Top Speed": "310 km/h"
+    }
+  }
+]

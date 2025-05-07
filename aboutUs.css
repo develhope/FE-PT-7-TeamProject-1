@@ -1,0 +1,63 @@
+body {
+  margin: 0;
+}
+
+main {
+  /* Contenitore principale */
+  font-family: 'Playfair Display', serif;
+  padding: 2rem;
+  background-color: #0B1120;
+  color: #d7d4d4;
+}
+
+.about-us {
+  /* Sezione "Chi siamo" */
+  display: flex;
+  align-items: center;
+  gap: 8rem;
+  padding: 1rem;
+  padding-left: 90px;
+  /* Aggiunto padding per migliorare il layout */
+}
+
+.text-content {
+  /* Contenuto testuale */
+  max-width: 600px;
+}
+
+header h1 {
+  /* Titolo */
+  font-size: 3rem;
+  color: #C4A55F;
+  margin-bottom: 1.5rem;
+}
+
+article p {
+  /* Paragrafo */
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+article .reviews {
+  /* Sezione recensioni */
+  font-size: 1rem;
+}
+
+article a {
+  /* Link */
+  color: #C4A55F;
+  transition: color 0.5s ease;
+  text-decoration: none;
+}
+
+article a:hover {
+  /* Hover link */
+  color: #84868a;
+}
+
+.image-content img {
+  /* Immagine */
+  width: 80%;
+  border-radius: 10px 15px;
+}

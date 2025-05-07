@@ -1,0 +1,83 @@
+.auto-body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    background-color: #ffffff;
+    color: #111;
+    background-color: #0B1120;
+  }
+  
+  .scheda-container-auto {
+    padding: 40px;
+    max-width: 1200px;
+    margin: 40px;
+  }
+  
+  .testo h1 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 40px;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 10px;
+    color: #C4A55F;
+  }
+  
+  .scheda-contenuto-auto {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    align-items: flex-start;
+    justify-content: center;
+    color:#ccc;
+  }
+  
+  .colonna-sinistra-auto {
+    flex: 1 1 50%;
+  }
+  
+  .immagine-auto {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  
+  .colonna-destra-auto {
+    flex: 1 1 40%;
+    background-color: #1A1F2E;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  }
+  
+  .prezzo-auto {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  .prezzo-auto strong {
+    font-size: 2rem;
+    color: #C4A55F;
+  }
+
+/*Tabella*/
+  .car-specs {
+    width: 100%;
+    max-width: 500px;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  .car-specs th {
+    background-color: #1A1F2E;
+    color: #C4A55F;
+    font-size: 1.2rem;
+    text-align: left;
+    padding: 12px;
+  }
+  
+  .car-specs td {
+    padding: 10px 12px;
+    border-bottom: 1px solid #ccc;
+  }
+  
